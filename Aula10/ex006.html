@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 16pt comic;
+            background: green;
+            color: antiquewhite;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id= "area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> aqui estamos colocando a funçao onclick dentro da div e no parametro dela selecionamos qual açao sera executada ao clicar-->
+    <div id="area">
+
+        Interaja...
+    
+    </div>
+
+    <script>
+        var a = window.document.querySelector('div#area') //declarando a variavel fora dos blocos, assim ele serve para todos esses blocos abaixo
+        //ativando eventos atraves de listeners
+        a.addEventListener("click", clicar)
+        a.addEventListener("mouseenter", entrar)
+        a.addEventListener("mouseout", sair)
+        function clicar(){        
+            
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar(){        
+            
+            a.innerText = 'Entrou!'
+        }
+        function sair(){        
+            
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+        
+
+    </script>
+</body>
+</html>
