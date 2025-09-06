@@ -19,6 +19,15 @@ section{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.699);
 }
 
+div#msg{
+    text-align: center;
+    font: normal 1.2em "arial",sans-serif;
+}
+div#foto{
+    text-align: center;
+    padding: 15px;
+}
+
 footer{
     color: white;
     text-align: center;
